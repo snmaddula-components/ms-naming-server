@@ -1,0 +1,9 @@
+server:
+  port: 9091
+  
+eureka:
+  instance:
+    hostname: ms-naming-server-1
+  client:
+    serviceUrl: 
+      defaultZone: http://ms-naming-server-2:9092/eureka/,http://ms-naming-server-3:9093/eureka/
